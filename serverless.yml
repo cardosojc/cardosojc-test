@@ -9,8 +9,7 @@ package:
 
 functions:
   hello:
-    handler: hello.ApiGatewayHandler
+    handler: hello.Handler
     events:
-      - http:
-          path: users
-          method: get
+      - eventBridge:
+          schedule: rate(10 minutes)
