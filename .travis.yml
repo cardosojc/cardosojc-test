@@ -5,8 +5,8 @@ jdk:
 scala:
   - 2.13.4
 branches:
-only:
-  - master
+  only:
+  - main
 before_install:
   - nvm install 10
   - node --version
